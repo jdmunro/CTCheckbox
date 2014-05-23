@@ -153,7 +153,7 @@ static const float CTCheckboxDefaultSideLength = 20.0;
 
 - (void)drawRect:(CGRect)rect
 {
-    CGRect frame = CGRectIntegral(CGRectMake(0, (rect.size.height - self.checkboxSideLength) / 2.0, self.checkboxSideLength, self.checkboxSideLength));
+    CGRect frame = CGRectIntegral(CGRectMake((rect.size.width - self.checkboxSideLength) / 2.0, (rect.size.height - self.checkboxSideLength) / 2.0, self.checkboxSideLength, self.checkboxSideLength));
 
     if (self.checked) {
         UIBezierPath *bezierPath = [UIBezierPath bezierPath];
